@@ -1,0 +1,153 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>Servicios públicos</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+</head>
+
+<body>
+    <!-- Registro -->
+    <div data-role="page" id="registro">
+        <div data-role="header" data-theme="b">
+            <h2>Aplicación móvil</h2>
+        </div>
+	
+        <div data-role="content">
+            <label for="text-basic">*Nombre(s):</label>
+            <input name="text-basic" id="text-basic" value="" type="text">
+            <label for="text-basic">*Apellido paterno:</label>
+            <input name="text-basic" id="text-basic" value="" type="text">
+            <label for="text-basic">*Apellido materno:</label>
+            <input name="text-basic" id="text-basic" value="" type="text">
+            <label for="text-basic">*Correo electrónico:</label>
+            <input name="text-basic" id="text-basic" value="" type="text">
+            <label for="text-basic">*Contraseña:</label>
+            <input name="text-basic" id="text-basic" value="" type="text">
+            <label for="text-basic">*Confirma contraseña:</label>
+            <input name="text-basic" id="text-basic" value="" type="text">
+            <label for="text-basic">*Celular (10 digitos):</label>
+            <input name="text-basic" id="text-basic" value="" type="text">
+            
+            <a href="#terminos" data-role="button" data-inline="true" data-theme="b" data-mini="true">Registrar</a>
+        </div>
+        
+    
+    
+    </div>
+    
+    
+	<div data-role="page" id="page">
+	<div data-role="header" data-theme="b">
+		<h1>Página uno</h1>
+	</div>
+	<div data-role="content">	
+		<ul data-role="listview">
+			<li><a href="#page2">Página dos</a></li>
+            <li><a href="#page3">Página tres</a></li>
+			<li><a href="#page4">Página cuatro</a></li>
+		</ul>		
+	</div>
+	<div data-role="footer">
+		<h4>Pie de página</h4>
+	</div>
+</div>
+
+    
+<!-- Terminos y condiciones -->    
+<div data-role="page" id="terminos">
+	<div data-role="header" data-theme="b">
+		<h2>Aplicación móvil</h2>
+	</div>
+	<div data-role="content">	
+		<p>Términos y condiciones
+        Términos y condiciones
+        Términos y condiciones
+        Términos y condiciones
+        Términos y condiciones
+        Términos y condiciones		
+        Términos y condiciones
+        Términos y condiciones
+        Términos y condiciones
+        Términos y condiciones</p>
+       
+        <a href="#registro" data-role="button" data-inline="true" data-theme="b" data-mini="true">Salir</a>
+        <a href="#activar" data-role="button" data-inline="true" data-theme="b" data-mini="true">Aceptar</a>
+        
+	</div>
+</div>
+
+    <!-- Activar usuario -->
+<div data-role="page" id="activar">
+	<div data-role="header" data-theme="b">
+		<h2>Aplicación móvil</h2>
+	</div>
+	<div data-role="content">	
+		<p>Favor de introducir el código de activación</p>	
+        <label for="text-basic">Correo electrónico:</label>
+        <input name="text-basic" id="text-basic" value="" type="text">
+        <label for="text-basic">*Código (6 digitos):</label>
+        <input name="text-basic" id="text-basic" value="" type="text">
+        
+        <a href="#principal" data-role="button" data-inline="true" data-theme="b" data-mini="true">Ingresar</a>
+	</div>
+	
+</div>
+
+    <!-- Página principal -->
+<div data-role="page" id="principal">
+	<div data-role="header" data-theme="b">
+		<h1>Aplicación móvil</h1>  
+    <ul data-role="listview">
+			<li><a href="#servicios" data>Servicios</a></li>
+            <li><a href="#page3">Mis reportes</a></li>
+		</ul>
+
+
+	</div>
+	<div data-role="content">	
+		<h1 data-theme="a">Botón de emergencia</h1>	
+        
+        <h1>Términar emergencia</h1>
+        
+	</div>
+	
+</div>
+    
+    <!-- Página de servicios -->
+    <div data-role="page" id="servicios">
+        <div data-role="header" data-theme="b">
+            <h1>Aplicación móvil</h1>  
+        </div>
+        <h2>Servicios</h2>
+
+	
+<form>
+<div class="ui-field-contain">
+    <select name="select-native-2" id="select-native-1">
+        <option></option>
+        <option value="1">Alumbrado</option>
+        <option value="2">Aguas y alcantarillas</option>
+        <option value="3">Obras públicas</option>
+        <option value="4">Servicios públicos</option>
+    </select>
+</div>
+    
+    <div class="ui-field-contain">
+    <select name="select-native-2" id="select-native-2">
+        <option value="1">Fuga de agua</option>
+        <option value="2">Falta de agua</option>
+        <option value="3">Robo coladera o mantenimiento</option>
+        <option value="4">Desasolve</option>
+        <option value="4">Pipa de agua</option>
+    </select>
+</div>
+</form>
+        
+    </div>
+    
+    
+</body>
+</html>
