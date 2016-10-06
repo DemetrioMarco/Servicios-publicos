@@ -10,7 +10,7 @@
 
 <body>
     <!-- Registro -->
-    <div data-role="page" id="registro" data-theme="a">
+    <div data-role="page" id="registro" data-theme="c">
         <div data-role="header" data-theme="b">
             <h2>Aplicaci&oacute;n m&oacute;vil</h2>
         </div>
@@ -32,7 +32,7 @@
                 <label for="text-basic">*Celular (10 digitos):</label>
                 <input name="text-basic" id="text-basic" value="" type="text">
                 
-                <a href="#terminos"  data-role="button" data-theme="b" style="align-content:center">Registrar</a>
+                <a href="#terminos"  data-role="button" data-theme="c" data-icon="check" style="align-content:center; width: 160px;">Registrar</a>
             </form>
         </div>
         
@@ -83,8 +83,6 @@
 	</div>
 	
 </div>
-
-
 
 
     <!-- Página principal -->
@@ -153,10 +151,10 @@
             
         <p>Tomar foto:</p>
         <div data-inline="true" align="center">
-              <button data-inline="true" src="img/camera.png"></button>
-              <button data-inline="true" data-icon="custom"></button>
-              <button data-inline="true" data-icon="custom"></button>
-              <button data-inline="true" data-icon="custom"></button>
+            <input type="image" src="img/camera.png" width="35" height="35" onclick="" >
+            <input type="image" src="img/camera.png" width="35" height="35" onclick="" >
+            <input type="image" src="img/camera.png" width="35" height="35" onclick="" >
+            <input type="image" src="img/camera.png" width="35" height="35" onclick="" >
         </div>
         <div data-inline="true" align="center">
         	<a href="#servicios" data-role="button" data-inline="true">Cancelar</a>
@@ -239,17 +237,7 @@
             </div>
         </div>
     </div>
-
-<!-- Popup mensaje de Reporte enviado con exito
-    <div data-role="popup" id="popupBasic">
-    	<div data-role="content">
-        
-		<h2 align="center" style="color:#E9070B">!Reporte enviado con &eacute;xito¡</h2>
-        
-        <button id="btn_aceptar">Aceptar</button>
-        </div>
-	</div>
--->    
+   
     
 </body>
 </html>
